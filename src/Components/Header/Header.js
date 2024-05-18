@@ -7,7 +7,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        axios.get('http://localhost:3002/menu')
+        axios.get('https://imdb-site.vercel.app/menu')
             .then(response => {
                 if (Array.isArray(response.data)) {
                     setMenuItems(response.data);
