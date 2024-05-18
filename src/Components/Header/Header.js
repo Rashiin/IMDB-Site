@@ -7,7 +7,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        axios.get('https://my-json-server.typicode.com/Rashiin/api/db.json/menu')
+        axios.get('https://my-json-server.typicode.com/Rashiin/api/menu')
             .then(response => {
                 if (Array.isArray(response.data)) {
                     setMenuItems(response.data);
