@@ -7,7 +7,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        axios.get('https://rashiin.github.io/api/db.json/menu')
+        axios.get('https://my-json-server.typicode.com/Rashiin/api/db.json/menu')
             .then(response => {
                 if (Array.isArray(response.data)) {
                     setMenuItems(response.data);
