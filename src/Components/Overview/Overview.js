@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaStar, FaFilm, FaImdb, FaPlayCircle, FaInfoCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import './over.css'
+import './over.css';
 
 const Overview = () => {
     const [data, setData] = useState([]);
@@ -14,7 +14,7 @@ const Overview = () => {
         const fetchData = async () => {
             try {
                 const result = await axios.get('https://rashiin.github.io/api/db.json');
-                setData(result.data);
+                setData(result.data.overview);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -22,6 +22,7 @@ const Overview = () => {
 
         fetchData();
     }, []);
+
     const settings = {
         dots: true,
         infinite: true,
@@ -71,20 +72,20 @@ const Overview = () => {
                         transition={{ duration: 0.3 }}
                         style={{ overflowY: 'hidden' }}
                     > 
-                        <div className=" overflow-y-hidden overflow-hidden m-3 text-slate-200 rounded-lg shadow-lg transform transition-transform duration-200 hover:scale-105" style={{ maxWidth: '300px' , overflowY:"hidden"}}>
+                        <div className="overflow-y-hidden overflow-hidden m-3 text-slate-200 rounded-lg shadow-lg transform transition-transform duration-200 hover:scale-105" style={{ maxWidth: '300px', overflowY: "hidden" }}>
                             <img
                                 className="w-full h-56 object-cover p-1" 
                                 src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                                 alt={item.title}
                             />
                             <div className="p-3 flex flex-col h-48 bg-gradient-to-t from-stone-900 via-transparent rounded-b-lg" style={{ overflowY: 'hidden' }}>
-                                <h2 className="text-lg font-bold  mb-2"> 
-                                    {truncateText(item.title, 25)} {}
+                                <h2 className="text-lg font-bold mb-2"> 
+                                    {truncateText(item.title, 25)}
                                 </h2>
-                                <p className="text-sm  overflow-hidden mb-2"> 
-                                    {truncateText(item.overview, 50)} 
+                                <p className="text-sm overflow-hidden mb-2"> 
+                                    {truncateText(item.overview, 50)}
                                 </p>
-                                <div className="flex justify-between items-center ">
+                                <div className="flex justify-between items-center">
                                     <div className="flex items-center text-sm"> 
                                         <FaStar className="text-yellow-500 mr-1" /> {item.vote_average}
                                     </div>
@@ -97,10 +98,10 @@ const Overview = () => {
                                 </div>
                                 <div className="flex justify-between items-center mt-2">
                                     <button className="bg-amber-400 hover:bg-amber-500 text-black font-bold py-1 px-2 rounded text-xs sm:text-sm md:text-base">
-                                        <FaPlayCircle className=' bg-transparent' /> Watch Trailer
+                                        <FaPlayCircle className='bg-transparent' /> Watch Trailer
                                     </button>
                                     <button className="bg-amber-400 hover:bg-amber-500 text-black font-bold py-1 px-2 rounded text-xs sm:text-sm md:text-base">
-                                        <FaInfoCircle  className=' bg-transparent'/> More Info
+                                        <FaInfoCircle className='bg-transparent' /> More Info
                                     </button>
                                 </div>
                             </div>
