@@ -10,7 +10,7 @@ const FirstPart = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('https://rashiin.github.io/api/db.json');
-                setCarouselData(response.data);
+                setCarouselData(response.data.first);
             } catch (error) {
                 console.error('Error fetching carousel data:', error);
             }
@@ -38,3 +38,4 @@ const FirstPart = () => {
 };
 
 export default FirstPart;
+
