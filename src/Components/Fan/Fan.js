@@ -9,13 +9,16 @@ const Fan = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3002/Fan')
-            .then(response => {
+        const fetchMovies = async () => {
+            try {
+                const response = await axios.get('http://localhost:3002/Fan');
                 setMovies(response.data);
-            })
-            .catch(error => {
+            } catch (error) {
                 console.error('Error fetching movies:', error);
-            });
+            }
+        };
+
+        fetchMovies();
     }, []);
 
     return (
