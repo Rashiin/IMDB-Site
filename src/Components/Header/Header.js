@@ -7,10 +7,10 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        axios.get('http://localhost:3002/menu')
+        axios.get('https://rashiin.github.io/api/db.json')
             .then(response => {
-                if (Array.isArray(response.data)) {
-                    setMenuItems(response.data);
+                if (Array.isArray(response.data.menu)) {
+                    setMenuItems(response.data.menu);
                 } else {
                     console.error('Unexpected format in response: ', response.data);
                 }
