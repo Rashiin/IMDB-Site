@@ -8,8 +8,8 @@ import { motion } from 'framer-motion'; // Importing Framer Motion for animation
 
 // Async action using redux toolkit
 export const fetchCelebrities = createAsyncThunk('celebrities/fetchCelebrities', async () => {
-  const response = await axios.get('http://localhost:3002/celebrity');
-  return response.data;
+  const response = await axios.get('https://rashiin.github.io/api/db.json');
+  return response.data.celebrity;
 });
 
 // Slice
@@ -66,3 +66,4 @@ const Famous = () => {
 };
 
 export default Famous;
+
