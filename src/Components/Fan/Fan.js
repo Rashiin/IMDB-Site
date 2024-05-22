@@ -20,7 +20,6 @@ const Fan = () => {
 
         fetchMovies();
     }, []);
-
     return (
         <motion.div className="container mx-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         <h2 className="text-3xl font-bold mb-8 text-yellow-500">Featured Movies</h2>
