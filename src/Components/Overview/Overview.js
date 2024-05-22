@@ -14,7 +14,12 @@ const Overview = () => {
         const fetchData = async () => {
             try {
                 const result = await axios.get('https://rashiin.github.io/api/db.json');
-                setData(result.data);
+                console.log('API Response:', result.data); // Log the API response for debugging
+                if (result.data && Array.isArray(result.data.over)) {
+                    setData(result.data.over);
+                } else {
+                    console.error('Unexpected response format:', result.data);
+                }
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -80,7 +85,7 @@ const Overview = () => {
                             />
                             <div className="p-3 flex flex-col h-48 bg-gradient-to-t from-stone-900 via-transparent rounded-b-lg" style={{ overflowY: 'hidden' }}>
                                 <h2 className="text-lg font-bold mb-2"> 
-                                    {truncateText(item.title, 25)} {}
+                                    {truncateText(item.title, 25)}
                                 </h2>
                                 <p className="text-sm overflow-hidden mb-2"> 
                                     {truncateText(item.overview, 50)} 
