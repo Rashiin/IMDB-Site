@@ -12,9 +12,14 @@ const Overview = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios('http://localhost:3002/over');
-            setData(result.data);
+            try {
+                const result = await axios.get('https://rashiin.github.io/api/db.json');
+                setData(result.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         };
+
         fetchData();
     }, []);
 
