@@ -10,7 +10,7 @@ const Top = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('https://rashiin.github.io/api/db.json');
-                setMovies(response.data);
+                setMovies(response.data.top);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -69,3 +69,4 @@ const Top = () => {
 };
 
 export default Top;
+
