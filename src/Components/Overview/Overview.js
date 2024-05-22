@@ -10,19 +10,26 @@ import './over.css'
 const Overview = () => {
     const [data, setData] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                // Update the API endpoint to the GitHub link
-                const result = await axios.get('https://rashiin.github.io/api/db.json');
+useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const result = await axios.get('https://rashiin.github.io/api/db.json');
+            // Log the result to check the format
+            console.log(result.data);
+            // Ensure that result.data is an array before calling setData
+            if (Array.isArray(result.data)) {
                 setData(result.data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
+            } else {
+                console.error('Expected an array but got:', result.data);
             }
-        };
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
 
-        fetchData();
-    }, []);
+    fetchData();
+}, []);
+
 
     const settings = {
         dots: true,
