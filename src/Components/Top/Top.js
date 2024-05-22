@@ -9,16 +9,15 @@ const Top = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3002/top');
+                const response = await axios.get('https://rashiin.github.io/api/db.json');
                 setMovies(response.data);
             } catch (error) {
-                console.error('Error fetching movies:', error);
+                console.error('Error fetching data:', error);
             }
         };
 
         fetchData();
     }, []);
-
 
     return (
         <div>
