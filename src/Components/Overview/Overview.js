@@ -10,18 +10,19 @@ import './over.css'
 const Overview = () => {
     const [data, setData] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const result = await axios.get('https://rashiin.github.io/api/db.json');
-                setData(result.data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const result = await axios.get('https://rashiin.github.io/api/db.json');
+            console.log(result.data); // log data to console
+            // setData(result.data.movies); // uncomment this once you know the structure
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
 
-        fetchData();
-    }, []);
+    fetchData();
+}, []);
 
     const settings = {
         dots: true,
