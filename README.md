@@ -1,57 +1,70 @@
-IMDB-like Dynamic Site
-Welcome to the IMDB-like Dynamic Site repository! This project is a dynamic website similar to IMDb, designed to showcase movies, TV shows, and other entertainment content. The site fetches data from various APIs and includes CRUD (Create, Read, Update, Delete) functionalities.
+<h1 align="center" id="title">IMDB-Site</h1>
 
-Live Demo
-Check out the live demo of the project: IMDB-like Dynamic Site
+<p id="description">Welcome to the IMDB-like Dynamic Site repository! This project is a dynamic website similar to IMDb designed to showcase movies TV shows and other entertainment content. The site fetches data from various APIs and includes CRUD (Create Read Update Delete) functionalities.</p>
 
-Features
-Dynamic Content: The site dynamically fetches data from different APIs, providing a constantly updated experience.
-CRUD Operations: Users can create, read, update, and delete entries, making it interactive and customizable.
-Routing: Implemented with React Router for seamless navigation between different pages and sections.
-State Management: Utilizes React Redux for efficient state management across the application.
-Technologies Used
-Frontend:
+<h2>🚀 Demo</h2>
 
-React
-React Router
-React Redux
-Backend/Data:
+[https://imdb-site-5hx3-ivankluat-rashiins-projects.vercel.app/](https://imdb-site-5hx3-ivankluat-rashiins-projects.vercel.app/)
 
-JSON Server
-MockAPI
-RabitAPI
-Installation
-To get a local copy up and running, follow these simple steps:
+  
+  
+<h2>🧐 Features</h2>
 
-Clone the repository
-sh
-Copy code
+Here're some of the project's best features:
+
+*   Dynamic Content: The site dynamically fetches data from different APIs providing a constantly updated experience.
+*   CRUD Operations: Users can create read update and delete entries making it interactive and customizable.
+*   Routing: Implemented with React Router for seamless navigation between different pages and sections.
+*   State Management: Utilizes React Redux for efficient state management across the application.
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the repository</p>
+
+```
 git clone https://github.com/Rashiin/IMDB-Site.git
-Navigate to the project directory
-sh
-Copy code
+```
+
+<p>2. Navigate to the project directory</p>
+
+```
 cd your-repository
-Install dependencies
-sh
-Copy code
+```
+
+<p>3. Install dependencies</p>
+
+```
 npm install
-Start the development server
-sh
-Copy code
+```
+
+<p>4. Start the development server</p>
+
+```
 npm start
-Usage
-Once the server is running, you can access the site at http://localhost:3000. From there, you can explore the different features, navigate through pages, and perform CRUD operations.
+```
 
-Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+<h2>🍰 Contribution Guidelines:</h2>
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-Distributed under the MIT License. See LICENSE for more information.
+Once the server is running you can access the site at http://localhost:3000. From there you can explore the different features navigate through pages and perform CRUD operations.
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Frontend:
+*   React
+*   React Router
+*   React Redux
+*   Backend/Data:
+*   JSON Server
+*   MockAPI
+*   RabitAPI
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the Distributed under the MIT License. See LICENSE for more information.
 
 Contact
 Rashin Farahani  - farahanirashin@gmail.com
