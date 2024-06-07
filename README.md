@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+IMDB-like Dynamic Site
+Welcome to the IMDB-like Dynamic Site repository! This project is a dynamic website similar to IMDb, designed to showcase movies, TV shows, and other entertainment content. The site fetches data from various APIs and includes CRUD (Create, Read, Update, Delete) functionalities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo
+Check out the live demo of the project: IMDB-like Dynamic Site
 
-## Available Scripts
+Features
+Dynamic Content: The site dynamically fetches data from different APIs, providing a constantly updated experience.
+CRUD Operations: Users can create, read, update, and delete entries, making it interactive and customizable.
+Routing: Implemented with React Router for seamless navigation between different pages and sections.
+State Management: Utilizes React Redux for efficient state management across the application.
+Technologies Used
+Frontend:
 
-In the project directory, you can run:
+React
+React Router
+React Redux
+Backend/Data:
 
-### `npm start`
+JSON Server
+MockAPI
+RabitAPI
+Installation
+To get a local copy up and running, follow these simple steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the repository
+sh
+Copy code
+git clone https://github.com/Rashiin/IMDB-Site.git
+Navigate to the project directory
+sh
+Copy code
+cd your-repository
+Install dependencies
+sh
+Copy code
+npm install
+Start the development server
+sh
+Copy code
+npm start
+Usage
+Once the server is running, you can access the site at http://localhost:3000. From there, you can explore the different features, navigate through pages, and perform CRUD operations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-### `npm test`
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+License
+Distributed under the MIT License. See LICENSE for more information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contact
+Rashin Farahani  - farahanirashin@gmail.com
 
-### `npm run build`
+Project Link: https://imdb-site-5hx3-ivankluat-rashiins-projects.vercel.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
